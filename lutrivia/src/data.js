@@ -1,6 +1,7 @@
 export default {
     questions: [
         {
+            id: 1,
             text: "An otter's den is called a sofa.",
             answer: false
         },
@@ -34,7 +35,7 @@ export default {
         },
         {
             text: "Otters live all over the world.",
-            answer: true
+            answer: false
         },
         {
             text: "Otters show up in myths from different cultures.",

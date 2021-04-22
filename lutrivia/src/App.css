@@ -1,0 +1,7 @@
+.btn.incorrect {
+  background: red;
+}
+
+.btn.correct {
+  background: green;
+}
