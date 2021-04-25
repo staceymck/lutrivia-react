@@ -6,18 +6,6 @@ export default class Button extends React.Component {
     btnClass: ""
   }
 
-  // applyColor = () => {
-  //   console.log(this.props.isCorrect)
-  //   if (this.props.isCorrect !== "NA") {
-  //     if (this.props.isCorrect === false && this.state.clicked) {
-  //       return "false"
-  //     } else {
-  //       return "true"
-  //     }
-  //   }
-  //   return ""
-  // }
-
   onClick = (e) => {
     this.props.handleClick(e)
     if (this.props.isCorrect === true) {
@@ -25,18 +13,6 @@ export default class Button extends React.Component {
     } else {
       this.setState({btnClass: "incorrect"})
     }
-    // let btnClass = ""
-    // console.log(this.props.isCorrect)
-    // if (this.props.isCorrect === true) {
-    //   btnClass = "true"
-    // } else if (this.props.isCorrect === false) {
-    //   btnClass = "false"
-    // }
-
-    // console.log(btnClass)
-    // this.setState({
-    //   btnClass: btnClass
-    // })
   }
 
   render() {
@@ -53,3 +29,28 @@ export default class Button extends React.Component {
   }
 }
 
+  // applyColor = () => {
+  //   console.log(this.props.isCorrect)
+  //   if (this.props.isCorrect !== "NA") {
+  //     if (this.props.isCorrect === false && this.state.clicked) {
+  //       return "false"
+  //     } else {
+  //       return "true"
+  //     }
+  //   }
+  //   return ""
+  // }
+
+
+   // let btnClass = ""
+    // console.log(this.props.isCorrect)
+    // if (this.props.isCorrect === true) {
+    //   btnClass = "true"
+    // } else if (this.props.isCorrect === false) {
+    //   btnClass = "false"
+    // }
+
+    // console.log(btnClass)
+    // this.setState({
+    //   btnClass: btnClass
+    // })
